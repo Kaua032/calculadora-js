@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="fundo">
+      <h1>Kauã Xavier</h1>
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td><button onclick="limpar()">C</button></td>
+            <td><button onclick="dele()">del</button></td>
+            <td><button onclick="dentro('/')">/</button></td>
+            <td><button onclick="dentro('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="dentro('7')">7</button></td>
+            <td><button onclick="dentro('8')">8</button></td>
+            <td><button onclick="dentro('9')">9</button></td>
+            <td><button onclick="dentro('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="dentro('4')">4</button></td>
+            <td><button onclick="dentro('5')">5</button></td>
+            <td><button onclick="dentro('6')">6</button></td>
+            <td><button onclick="dentro('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="dentro('1')">1</button></td>
+            <td><button onclick="dentro('2')">2</button></td>
+            <td><button onclick="dentro('3')">3</button></td>
+            <td rowspan="2">
+              <button style="height: 106px" onclick="result()">=</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button style="width: 106px" onclick="dentro('0')">0</button>
+            </td>
+            <td><button onclick="dentro('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
